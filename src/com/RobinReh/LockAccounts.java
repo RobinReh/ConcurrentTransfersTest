@@ -1,8 +1,7 @@
-package com.company;
+package com.RobinReh;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockAccounts implements Accounts{
@@ -10,7 +9,7 @@ public class LockAccounts implements Accounts{
     ReentrantLock lock = new ReentrantLock();
 
     public LockAccounts(int nrofaccs){
-        accounts = new ArrayList<Account>();
+        accounts = new ArrayList<>();
 
         for (int i = 0; i<nrofaccs; i++) {
             accounts.add(new Account("Test" + i, 1000));

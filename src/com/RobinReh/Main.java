@@ -1,9 +1,4 @@
-package com.company;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
+package com.RobinReh;
 
 public class Main {
 
@@ -14,7 +9,7 @@ public class Main {
      * Accounts - number of accounts to create
      *
      * @param args Mode, Threads, Accounts
-     * @throws InterruptedException
+     * @throws InterruptedException if unable to initiate tests
      */
     public static void main(String[] args) throws InterruptedException {
         if (args.length < 3) {

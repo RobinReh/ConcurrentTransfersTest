@@ -1,4 +1,4 @@
-package com.company;
+package com.RobinReh;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -24,16 +24,19 @@ public class ProducerConsumer implements Tests{
      * Accounts - number of accounts to create
      *
      * @param args Mode, Threads, Accounts
-     * @throws InterruptedException
      */
     public ProducerConsumer(String[] args){
         this.args = args;
     }
 
+    /**
+     *
+     * @throws InterruptedException if thread is interrupted, sleep/await
+     */
     @Override
     public void init() throws InterruptedException {
         // Initiate queue of size 10
-        BlockingQueueLocks<FromTo> queue = new BlockingQueueLocks<FromTo>(10);
+        BlockingQueueLocks<FromTo> queue = new BlockingQueueLocks<>(10);
 
         // Create accounts for the test based on input
         accs = new LockAccounts(Integer.parseInt(args[2]));

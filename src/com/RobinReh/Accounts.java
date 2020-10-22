@@ -1,24 +1,24 @@
-package com.company;
+package com.RobinReh;
 
 public interface Accounts {
 
     /**
      * Print balance in each account and total balance
      */
-    public void totalBalance();
+    void totalBalance();
 
     /**
      * Transfer balance between indexed accounts
      * @param from sender
      * @param to receiver
      * @param amount amount of balance to transfer
-     * @return
+     * @return true if successful false otherwise
      */
-    public boolean transfer(int from, int to, int amount);
+    boolean transfer(int from, int to, int amount);
 
     /**
      * Transfer 100 balance between random accounts 'transfer' amount of times
-     * @param transfers
+     * @param transfers How many transfers to be made
      */
-    public void randomTransfers(int transfers);
+    void randomTransfers(int transfers);
 }

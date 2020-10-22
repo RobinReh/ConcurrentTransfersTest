@@ -1,8 +1,8 @@
-package com.company;
+package com.RobinReh;
 
 public interface Tests {
     /**
      * Run the tests using entered parameters
      */
-    public void init() throws InterruptedException;
+    void init() throws InterruptedException;
 }

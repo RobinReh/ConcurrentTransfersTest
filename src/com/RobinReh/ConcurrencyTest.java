@@ -1,4 +1,4 @@
-package com.company;
+package com.RobinReh;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -8,7 +8,7 @@ public class ConcurrencyTest implements  Tests{
 
     private String[] args;
     private int nrOfTransfers;
-    public ConcurrencyTest(String args[], int nrOfTransfers) {
+    public ConcurrencyTest(String[] args, int nrOfTransfers) {
         this.args = args;
         this.nrOfTransfers = nrOfTransfers;
     }

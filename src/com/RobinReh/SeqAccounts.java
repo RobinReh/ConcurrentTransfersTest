@@ -1,4 +1,4 @@
-package com.company;
+package com.RobinReh;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -7,7 +7,7 @@ public class SeqAccounts implements Accounts{
     ArrayList<Account> accounts;
 
     public SeqAccounts(int nrofaccs){
-        accounts = new ArrayList<Account>();
+        accounts = new ArrayList<>();
 
         for (int i = 0; i<nrofaccs; i++) {
             accounts.add(new Account("Test" + i, 1000));
